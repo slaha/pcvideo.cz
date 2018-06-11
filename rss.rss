@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="sablony/xslt.xslt" media="screen" ?> 
+<rss version="0.91">
+ <channel>
+  <title>Video na PC</title>
+  <link>http://pcvideo.cz</link>
+  <description>Téměř vše o videu na počítači, DivX, DVD, VCD, SVCD, titulky, audio u videa a další</description>
+  <language>cs</language>
+<item>
+   <title>Zaktualizované časté dotazy</title>
+   <link>http://pcvideo.cz/caste-dotazy.html</link>
+   <description>Přidal jsem několik (dva) další dotazy do Často kladených dotazů.</description>
+  </item>
+    <item>
+   <title>MOV na AVI</title>
+   <link>http://pcvideo.cz/mov-na-avi.html</link>
+   <description>Převod video z MOVu na AVI za pomoci RAD Video Tools.</description>
+  </item>
+  <item>
+   <title>Video na webu</title>
+   <link>http://pcvideo.cz/video-na-webu.html</link>
+   <description>Publikování videa ne HTML stránkách.</description>
+  </item>
+  <item>
+   <title>The FilmMachine</title>
+   <link>http://pcvideo.cz/programy/filmmachine.html</link>
+   <description>Návod na používání programu The FilmMachine.</description>
+  </item>
+	<item>
+   <title>The FilmMachine - překlad oficiální nápovědy</title>
+   <link>http://pcvideo.czprogramy/filmmachine-ofi.html</link>
+   <description>Překlad oficiální nápovědy k The Filmmachine.</description>
+  </item>
+  <item>
+   <title>DivXG400</title>
+   <link>http://pcvideo.cz/divxg400.html</link>
+   <description>Stránky o utilitě/kodeku DivXG400.</description>
+  </item>
+  <item>
+   <title>Nový design</title>
+   <link>http://pcvideo.cz/</link>
+   <description>Celé Video na PC má nový design. Snad se vám to líbí.</description>
+  </item>
+  <item>
+   <title>Vylepšení FlasKMPEGu</title>
+   <link>http://pcvideo.cz/flaskmpeg-info.html</link>
+   <description>Stránka zabývající se verzemi FlasKMPEGu a jeho vylepšení.</description>
+  </item>
+  <item>
+   <title>Odkazy na články podle zaměření</title>
+   <link>http://pcvideo.cz/index.html</link>
+   <description>Změna se týká pouze hlavičky, ve které přibyly odkazy na články podle zaměření (Základy, Konverze, Články, Externí články).</description>
+  </item>
+ <item>
+   <title>Stránka o stránkách</title>
+   <link>http://pcvideo.cz/o-strankach.html</link>
+   <description>Nějaké informace o mně, stránkách Video na PC, co tu bude X nebude, kontakt a další.</description>
+  </item>
+  <item>
+   <title>AVI do (S)VCD s titulky</title>
+   <link>http://pcvideo.cz/avi-do-s-vcd-spolu-s-titulky-do-jednoho.html</link>
+   <description>Jedná se v podstatě o stejný článek jako "Převod AVi do DVD s titulky v jednom souboru" akorát místo DVD použijeme SVCD nebo VCD.</description>
+  </item>
+ </channel>
+</rss>

@@ -1,0 +1,19 @@
+body {font-family: 'Times New Roman CE', 'Times New CE', 'Times CE', 'Times New Roman', times, serif;font-size: 13pt;}
+.hledani {visibility: hidden;}
+.menu-leve li li {float: left; margin-right: 10pt;}
+h1 {font-size: 22pt;font-weight: bold;}
+h2 {font-size: 18pt;font-weight: bold;}
+h3 {font-size: 16pt;font-weight: bold;}
+.patka {visibility: hidden;}
+.menu {clear: both;float: left;}
+a {color: blue;}
+a[name] {display: none;}
+a[href]:after {
+      content: " [" attr(href) "]";
+}
+
+a[href|="#"]:after, /* vnitøní odkazy */
+a[href|="javascript:"]:after /* skripty */
+{
+     content: "";
+}

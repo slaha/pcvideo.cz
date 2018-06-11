@@ -1,0 +1,164 @@
+body {
+font-size: 0.9em;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
+.obsah {
+position: absolute;
+top:0;
+line-height: 1.5;
+left: 11.75em;
+background: url(pozadi-vrch.gif) repeat-x;
+width: 61%;
+max-width: 780px;
+padding: 25px 10px 100px 10px;
+border: 1px solid #003366;
+margin: 0;
+margin-bottom: 10px;
+min-height: 850px;
+background-color: white;
+font-size: 0.9em;
+}
+* html .obsah {height:850px;left: 11.70em;}
+.hledani {position: absolute;right: 2px;top: 0;}
+* html .hledani {top: -2px;}
+.hledat {border: none;}
+/******************************************************************/
+/* Styl pro menu */
+.menu-leve {
+position: absolute;
+left:0;
+top:0;
+border-left: 1px solid #003366;
+width:10.5em;
+}
+.menu-leve ul{
+margin: 0;
+padding: 0;
+list-style: none;
+background:#003366;
+}
+.menu-leve a{
+display: block;
+color: #FFF;
+background-color: #036;
+padding: 3px 12px 3px 8px;
+text-decoration: none;
+border-bottom: 1px solid #003366;
+font-weight: bold;
+}
+* html .menu-leve a{
+width: 10.5em;
+}
+.menu-leve a:hover{
+background-color: #369;
+color: #FFF;
+}
+.menu-leve li li a{
+display: block;
+color: #FFF;
+border-bottom: 1px solid #003366;
+width: 73.4%;
+margin:0;
+padding: 3px 0px 3px 50px;
+text-decoration: none;
+font-weight: normal;
+margin-left: -10px;
+}
+html>body .menu-leve li li a{
+background: #6699CC url(pozadi-menu.gif) no-repeat left center;
+}
+* html .menu-leve li li a{
+width: 106.5%;
+}
+.normal{border-bottom: none;margin-bottom:0px;}
+.normal a:hover{background: url(pozadi-menu-hover.gif) no-repeat;}
+	* html .normal a {background:  url(pozadi-menu-ie.gif) no-repeat left center;}
+	* html .normal a:hover{background: url(pozadi-menu-ie.gif) no-repeat -200px center;}
+.menu-leve img {border: none;margin: 0;}
+.video {display: block;height: 10.8em;width: 87%;background: url(logo3.gif) no-repeat;line-height: 20.2em;}
+* html .video {line-height: 11em;width: 7.1em;}
+* html .video-napis {
+position: relative;
+top: 4.5em;
+}
+.neni-videt {visibility: hidden;}
+/* Konec stylu pro menu */
+/*****************************************************/
+.menu {margin-top: 10px;background-color: #800039;}
+.menu ul {background-color: #f23939;color: white;font-weight: bold;padding-left: 10px;width: 73.4%;}
+.kam-dal {display: block; width:9.85em;background-color: #F23939;position: relative;left: -11px;height: 1.5em;padding-top: 10%;padding-left: 10px;border-bottom: 1px #800040 solid;}
+* html .kam-dal {width: 9.7em;left: -10px;}
+.menu ul li ul li {margin-left: -20px;display: block; width:10.5em;}
+.menu a:link {background: #F23939 url(kde-sem-a.gif) no-repeat left center; border-bottom:1px solid #800040;}
+.menu a:active {background: #F23939 url(kde-sem-a.gif) no-repeat left center; border-bottom:1px solid #800040;}
+.menu a:visited {background: #F23939 url(kde-sem-a.gif) no-repeat left center; border-bottom:1px solid #800040;}
+.menu a:hover {background: #800039 url(kde-sem-a-hover.gif) no-repeat left center;}
+* html .menu a:link {background: url(pozadi-menu-kd.gif) no-repeat left center; background-color: #F23939;border-bottom: 1px solid #800040;}
+* html .menu a:hover {background: url(pozadi-menu-kd.gif) no-repeat -200px center; background-color: #800040;}
+	* html .menu ul li ul li {position:relative; left: 0px;display: block; width:10.4em;}
+/******************************************************/
+.patka {position: absolute;bottom: 0;background: #036;left: 0;padding: 5px;width: 98.5%;color: white;z-index: 2;margin-top:25px;}
+* html .patka {width: 103.5%;}
+.patka a {color: #ffffcc;}
+.patka a:hover {color: yellow;text-decoration: none;}
+.patka2 {position: absolute; bottom:-25px;background-color: #800039;width: 100%;height: 70px;left: -2em;z-index: 1;font-size: 10px;color: white;}
+.patka2 a {color: #ffffcc;}
+.patka2 a:hover {color: yellow;text-decoration: none;}
+* html .patka2 {width:105%;}
+.nahoru {text-align: right;margin-bottom:5.3em;padding-top:5px;border-top: 2px solid #036;height: 2.8em;}
+* html .nahoru {margin-bottom: 3.5em;}
+/******************************************************/
+fieldset {
+border: 3px #30c double;
+background: #F4F6FF;
+padding: 10px;
+font-weight: bold;
+}
+legend {border: 1px #000066 solid;border-left: 5px #000066 solid;padding: 0 8px;}
+acronym {border-bottom: 1px black dashed;cursor: help;}
+/******************************************************/
+a {color: #3300cc;}
+a:hover {color: #ff3300;}
+a img {border: 1px #f30 solid;padding: 5px;}
+* html a img {border: 3px #f30 solid;}
+a:hover img {background-color: #dfdfff;}
+* html a:hover img {border: 3px blue solid;}
+p {margin: 0px 0px 20px 0px;text-indent: 2em;}
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {text-indent: 0;}
+hr {color: #036;background: #036;border: none;}
+.center {text-align: center;margin: 0 auto;border-bottom: 2px solid #036;padding-bottom: 3px;margin-bottom: 10px;}
+.ram {border: 2px solid olive;border-collapse: collapse;margin-bottom: 1em;}
+.ram td {vertical-align: top;border: 1px solid olive;padding: 1px 8px 1px 8px;}
+td.barva {background-color: #fc3;font-weight: bold;}
+.ano, .ne {text-align: center;}
+.ano {background-color: #33cc00;}
+.ne {background-color: #cc0000;color: white;}
+em {font-style: normal;font-weight: bold;}
+* html td {font-size: 0.8em;}
+h1 {font-family: 'Georgia CE', 'Times New CE', 'New York CE', Georgia, times, serif;font-size: 3em; font-weight: bold; text-align: center;margin-bottom: 0em;}
+h2 {font-size: 2em;font-family: 'Times New Roman CE', 'Times New CE', 'Times CE', 'Times New Roman', times, serif;margin-top:10px;margin-bottom:0;padding-top:5px;border-top: 2px solid #036;}
+* html h1 {padding-top:50px;}
+h3 {font-size: 1.3em;margin-bottom: 0.1em;padding-top:5px;border-top: 2px solid #036;}
+* html h2 {font-size: 2.2em;}
+.obsah li {margin-bottom: 0.3em;}
+.margin {margin:0;margin-left: 2em;}
+.datum {border-left: 1px solid black;background-color:#fc3;width: 85px;font-weight: bold;vertical-align: top;}
+.novinka {padding-left: 10px;}
+.margin-bottom {margin-bottom: 0.5em;}
+td {vertical-align: top;padding-bottom: 10px;}
+img {margin-top: 5px;margin-bottom: 20px;}
+p.okraj-vrch {border-top: 2px solid #036;padding-top: 1em;margin-bottom: 0.3em;}
+pre {width: 90%; overflow: auto;background-color: bisque;}
+html > pre {height: 102%;}
+* html pre {width: 100%;padding-bottom:2.5em;}
+dt {font-weight: bold;}
+dd {margin-bottom: 5px;}
+.patka a img:hover {background-color: transparent;}
+.reklama {position: absolute;top: 0;right: 10px;width:16%;font-size: small;}
+* html .reklama {font-size: xx-small;}
+kbd {font-family: 'Courier New CE', 'Courier CE', 'Courier New', courier, monospace;font-style: normal;background-color: #e8e8e8;padding: 1px 2px;font-size: 1.05em;}
+blockquote {margin-left: 40px;margin-right: 40px;display: block;font-style: italic;}

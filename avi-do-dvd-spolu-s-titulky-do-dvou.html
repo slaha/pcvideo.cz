@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Převod AVI na DVD s titulky, které je možné vypnout - Video na PC</title>
+<meta name="description" content="Návod na převod videa z AVI na DVD včetně titulků, které bude možno vypínat." />
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<meta http-equiv="Content-Language" content="cs" />
+<link rel="stylesheet" media="screen" href="sablony/styl.css" type="text/css" />
+<link rel="stylesheet" href="sablony/opera.css" type="text/nonsense" media="screen,projection" />
+<link rel="stylesheet" media="print" href="sablony/tisk.css" type="text/css" />
+<link rel="home" href="http://pcvideo.cz/" title="Úvodní stránka webu" />
+<link rel="index" href="http://pcvideo.cz/" title="Úvodní stránka webu" />
+<link rel="contents" href="mapa-stranek.html" title="Mapa stránek" />
+<link rel="search" href="hledani.html" title="Vyhledávání na webu" />
+<link rel="glossary" href="slovnik-pojmu.html" title="Slovník pojmů" />
+<link rel="help" href="o-strankach.html" title="Jak se zde chovat" />
+<link rel="author" href="o-strankach.html#autor" title="Autor tady toho" />
+<link rel="copyright"tml#copy" title="Prava na clanky" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.rss" />
+</head>
+<body>
+<div>
+<div class="obsah">
+<form action="http://www.google.com/custom" class="hledani"><div><input type="text" name="q" size="15" /><input type="submit" value="Hledej!" /><input type="hidden" name="cof" value="GALT:blue;S:http://pcvideo.cz;GL:0;VLC:maroon;AH:left;BGC:white;LH:0;LC:blue;GFNT:silver;ALC:olive;LW:0;T:black;GIMP:black;AWFID:dd0d40eecfe7ea97;" /><input type="hidden" name="domains" value="pcvideo.cz" /><input type="hidden" name="sitesearch" value="pcvideo.cz" /><input type="hidden" name="ie" value="utf-8" /></div></form>
+<h1>AVI na DVD s titulky</h1>
+<div class="center"><a href="#potreby">Potřeby</a> • <a href="#tmpgenc">AVI do MPEG</a> • <a href="#titulky">Přidání titulků</a>
+</div>
+<fieldset><legend>O čem to je:</legend>Máte AVI soubor, k němu titulky v externím souboru a chcete vytvořit DVD s možností vypínání titulků? Pak čtěte dál.<ul><li><a href="avi-do-dvd-spolu-s-titulky-do-jednoho.html">Návod na to samé, ale s nemožností vypnout titulky</a></li><li><a href="avi-do-s-vcd-spolu-s-titulky-do-jednoho.html">A do (S)VCD</a></li></ul></fieldset>
+
+<h2><a name="potreby"></a>Budeme potřebovat:</h2>
+<ul>
+<li><a href="http://cestiny.idnes.cz/pt/tmpgenc.html">TMPGEnc</a> - převede AVI na MPEG</li>
+<li><a href="http://www.videohelp.com/~liquid217/dvdauthorgui.pl?p=download">DVDAuthorGUI</a> - udělá z MPEGu DVD, plus přídá titulky.</li>
+<li><a href="http://tomzavodny.cz/program/subtool/SubtitleToolCZ.zip">Subtitle Tool</a> - Upraví titulky, pokud nesedí do videa.</li>
+</ul>
+
+<h2><a name="tmpgenc"></a>
+AVI do MPEG</h2>
+<p>Nejprve je nutné převást film v AVI na dva soubory. A to: *.m2v - soubor s videem a *.mp2 - audio. Dělá se to v TMPGEnc.</p>
+<p>Spusťte si tedy TMPGEnc. Spolu s&nbsp; ním se spustí i "Kouzelník" (Wizard). Nechteho zapnutého, pomůže.
+</p>
+<p><b>V kroku 1/5</b> vybereme výstupní formát videa. V našem případě
+to bude DVD PAL. Rozlišení bych zvolil podle kvality AVI, při hodně
+kostičkovaném zdroji rozhodně rozlišení zmenšete.</p>
+<p><strong>V kroku 2/5</strong> zvolíme vstupní video soubor. Ostatní nastavení se týkají zdroje (nikoli tedy výstupu) a nemá cenu je měnit.
+</p>
+<p><strong>V kroku 3/5</strong> se přidávají různé filtry. Myslím si, že jejich názvy
+samy řeknou, co dělají a nemá cenu se o tom moc rozepisovat. Jen bych
+rád upozornil, že "Odstranění šumu" prodlužuju dobu zpracování videa. A
+to tak, že hodně.</p>
+<p><strong>Další krok - 4/5</strong> slouží k vybrání datového toku neboli bitare.
+Můžete volit kb za sekundu, požadovanou velikost souboru nebo
+zaplněnost média. Pokud kliknete na tlačítko "Expert" (vpravo od
+"Odhadované velikosti souboru"), zobrazí se vám tabulka, kde budete
+moci nastavit další hodnoty. Kvalitě videa prospěje "Kvalita hledání
+pohybu" na "Nejvyšší kvalitě" a "Typ datového toku" na "2- fázový VBR".
+obě volby ale zvyšují délku zpracování. A to tak, že "Odstranění šumu"
+je proti tomu hadr.</p>
+<p>A teď bacha. Mohlo by se zdát, že krok 5/5 bude stačit prokliknout,
+ale není tomu tak. Pod kolonkou "Výstupní soubor" je políčko "Výstupní
+video a audio samostatně", což musíte zaškrtnout. Teď můžete kliknout
+na OK a počkat, než se komprimace zdárně povede.</p>
+
+<h2><a name="titulky"></a>Dodělání DVD</h2>
+<p>Předpokládám, že předchozí krok se vám povedl a můžeme jít dál.</p>
+<p>Pro převod na DVD budeme potřebovat DVDAuthorGUI. Instalace je
+jednoduchá, ale mně program nefungoval ve složce obshující "ů".
+Předpokládám, že to nejde, když je v cestě k programu diakritika. Pokud
+to tak není, opravte mě.</p>
+<p>Doufám, že jste nainstalovali a spustili program. Vypadá to takhle:</p>
+<a href="obrazky/avi-dvd-titulky-externe/dvdauthorgui.gif"><img alt="DVDAuthorGUI" title="Základní obrazovka programu DVDAuthorGUI" src="obrazky/avi-dvd-titulky-externe/_dvdauthorgui.gif" height="210" width="291" /></a>
+<p>Nejprve musíme vložit soubor s videem a se zvukem. Klikněte na file/
+add new title... Objeví se vám dialogové okno, ve kterém vyberete
+nejprve video soubor (přípona m2v) a poté audio soubor (přípona mp2).</p>
+<p>Teď je čas na přidání titulků. Program podporuje dost formátů a to:
+*.sub, *. ssa, *.srt, *.smi, *.rt, *.txt, *.aqt, plus asi další. Jak na
+to: Označte vámi přidaný soubor, klikněte na šipku u tlačítka "extras"
+a z nabídky vyberte "add/edit subtitles".</p>
+<img alt="Vložení titulků v DVDAuthorGUI" title="Vložení titulků v DVDAuthorGUI" src="obrazky/avi-dvd-titulky-externe/vlozeni-titulku.gif" height="302" width="498" />
+<p>V následujícím dialogovém okně kliknete na "add text subtitle" a
+vyberete titulky. Musíte také změnit kódování. Mění se to v nabídce
+"character set". S největší pravděpodobností to bude "CP1250". Můžete
+změnit písmo i jeho velikost, barvy nenastavíte.
+</p>
+<p>Nyní musíte nastavit jazyk, který se zobrazí v přehrávači. Klikněte
+opět na šipku u "extras" (viz obrázek nahoře) a vyberte "edit language
+tags". V dialogovém okénku kliknete na "add sub tag" Do seznamu nahoře
+se přidá řádek "Subtitle tag: JAZYK". Asi jste poznali, že se to mění
+pod tímto seznamem v nabídce. To samé udělejte&nbsp; se zvukem ("add
+audio tag" a stejný postup).</p>
+<p>Komprimace začne poté, co kliknete na "author dvd". Uložení je
+poměrně netradiční, vybíráte složku, do které se výsledný soubor
+nakopíruje.
+</p>
+<p>Teď stačí jen počkat, až DVDAuthorGUI udělá svoje. A je vymalováno!</p>
+<div class="nahoru"><a href="#">Nahoru</a></div>
+<!--Paticka-->
+<div class="patka">
+<div class="center"><a href="mapa-stranek.html">Mapa stránek</a> • <a href="o-strankach.html">O stránkách</a> • <a href="rss.rss">RSS</a> • <a href="http://poradna.pcvideo.cz/">Vaše dotazy</a></div>
+<p><strong><a href="http://pcvideo.cz">Video na PC</a>:</strong> Vytvořeno v roce 2005 a víc. Autorem je <a href="o-strankach.html#o-mne">Jan 'Šlaha' Šlahora</a>. Veškerá práva vyhrazena autorům článků. Pokud není uvedeno jinak, jsem to já.</p>
+<a href="http://www.toplist.cz/"><img src="http://toplist.cz/dot.asp?id=77065" alt="TOPlist" style="border:none;" width="1" height="1" /></a>
+<!-- phpmyvisites -->
+<a href="http://www.phpmyvisites.net/" title="phpMyVisites | Open source analýza návštevnosti webu"
+onclick="window.open(this.href);return(false);">
+<script type="text/javascript">
+<!--
+var a_vars = Array();
+var pagename='';
+
+var phpmyvisitesSite = 1;
+var phpmyvisitesURL = "http://www.pcvideo.cz/phpmv2/phpmyvisites.php";
+//-->
+</script>
+<script language=javascript src="http://www.pcvideo.cz/phpmv2/phpmyvisites.js" type="text/javascript"></script>
+<noscript>
+<p>phpMyVisites | Open source analýza návštevnosti webu
+<img src="http://www.pcvideo.cz/phpmv2/phpmyvisites.php" alt="phpMyVisites" style="border:0" />
+</p>
+</noscript>
+</a>
+<!-- /phpmyvisites --> 
+</div>
+
+</div>
+<!--/Paticka-->
+</div>
+<div class="menu-leve">
+<ul><li><a href="http://pcvideo.cz" class="video"> <span class="video-napis">Video na PC</span> </a><ul><li class="normal"><a href="avi.html">AVI</a></li><li class="normal"><a href="mpg.html">MPEG</a></li><li class="normal"><a href="dvd.html">DVD</a></li><li class="normal"><a href="wmv.html">WMV</a></li><li class="normal"><a href="mov.html">MOV</a></li><li class="normal"><a href="jine-formaty.html">Jiné formáty</a></li><li class="normal"><a href="titulky.html">Titulky</a></li><li class="normal"><a href="zvuk.html">Zvuk</a></li><li class="normal"><a href="programy.html">Programy</a></li><li class="normal"><a href="slovnik-pojmu.html">Pojmy</a></li><li class="normal"><a href="caste-dotazy.html">Časté dotazy</a></li><li class="normal"><a href="stahnout.html">Ke stáhnutí</a></li><li class="normal"><a href="odkazy.html">Odkazy</a></li><li class="normal"><a href="http://poradna.pcvideo.cz/">Poradna</a></li></ul></li></ul>
+<div class="menu"><ul><li><span class="kam-dal">Kam dál?</span>
+<ul>
+<li><a href="avi-do-dvd-spolu-s-titulky-do-jednoho.html">AVI na DVD s titulky natvrdo ve videu</a></li>
+<li><a href="dvd_do_avi.html">DVD do AVI</a></li>
+<li><a href="dvd_do_svcd.html">DVD do SVCD</a></li>
+<li><a href="dvd_do_vcd.html">DVD do VCD</a></li>
+<li><a href="http://www.pcvideo.cz">Úvod</a></li>
+<li><a href="http://www.poradna.pcvideo.cz">Poradna</a></li>
+</ul></li></ul>
+</div>
+</div>
+</body>
+</html>
+</a></li>
+<li><a href="http://www.poradna.pcvideo.cz">Poradna</a></li>
+</ul></li></ul>
+</div>
+</div>
+</body>
+</html>
